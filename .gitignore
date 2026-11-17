@@ -1,0 +1,15 @@
+# Match data and external datasets are never committed (not redistributable / not ours).
+data/*
+!data/README.md
+*.mp4
+
+# Generated submissions and caches
+evaluation/results/*.csv
+evaluation/reports/
+__pycache__/
+*.py[cod]
+*.part
+
+# Full-match ground truth must never be published
+*_possession_gt.csv
+*_possession_gt_meta.json

@@ -1,0 +1,8 @@
+# Environment used to train v9's GRU (python tools/train_v9.py gru_cv / final_gru), Python 3.11.9,
+# CPU. LightGBM stages (cv, grid, blend, final, skillcorner) run in requirements-solution.txt.
+# The trained weights are committed (possession/ml/v9_gru.npz), so regenerating the submission
+# does not need this environment.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0
+numpy==2.3.5
+pandas==2.2.3

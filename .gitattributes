@@ -1,0 +1,4 @@
+# Model files are hashed at load time: never let git rewrite their line endings.
+possession/ml/*.txt -text
+possession/ml/*.npz binary
+*.py text eol=lf

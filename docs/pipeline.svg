@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" font-family="Segoe UI, Arial, sans-serif" font-size="12">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5a6a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="330" fill="#ffffff"/>
+  <!-- row labels -->
+  <text x="10" y="22" font-size="13" font-weight="700" fill="#0b2a4a">TRAINING: other matches only (public, labelled)</text>
+  <text x="10" y="192" font-size="13" font-weight="700" fill="#0b2a4a">INFERENCE: the provided game (inputs only, no labels)</text>
+
+  <!-- training row -->
+  <g stroke="#7d93a8" stroke-width="1.2">
+    <rect x="10" y="34" width="150" height="74" rx="6" fill="#eef2f7"/>
+    <rect x="190" y="34" width="150" height="74" rx="6" fill="#eef2f7"/>
+    <rect x="370" y="34" width="170" height="74" rx="6" fill="#eef2f7"/>
+    <rect x="570" y="34" width="120" height="74" rx="6" fill="#eef2f7"/>
+    <rect x="720" y="34" width="230" height="116" rx="6" fill="#e3f0e6"/>
+  </g>
+  <text x="85" y="56" text-anchor="middle" font-weight="700">7 DFL + 3 Metrica</text>
+  <text x="85" y="74" text-anchor="middle">per-frame possession</text>
+  <text x="85" y="90" text-anchor="middle">and ball status</text>
+
+  <text x="265" y="56" text-anchor="middle" font-weight="700">Controlled possession</text>
+  <text x="265" y="74" text-anchor="middle">team spells &lt; 2 s that</text>
+  <text x="265" y="90" text-anchor="middle">bounce back = touches</text>
+
+  <text x="455" y="56" text-anchor="middle" font-weight="700">Degrade to BAR–ATH</text>
+  <text x="455" y="74" text-anchor="middle">its ball blackouts, player</text>
+  <text x="455" y="90" text-anchor="middle">drop-outs, noise (2 draws)</text>
+
+  <text x="630" y="56" text-anchor="middle" font-weight="700">219 features</text>
+  <text x="630" y="74" text-anchor="middle">team-symmetric,</text>
+  <text x="630" y="90" text-anchor="middle">1–9 s context</text>
+
+  <text x="835" y="56" text-anchor="middle" font-weight="700">Models</text>
+  <text x="835" y="76" text-anchor="middle">LightGBM  H / A / D</text>
+  <text x="835" y="94" text-anchor="middle">3 × bidirectional GRU  H / A / D</text>
+  <text x="835" y="112" text-anchor="middle">Boundary LightGBM (team change ±0.5 s)</text>
+  <text x="835" y="138" text-anchor="middle" font-style="italic" fill="#2f5d3a">all choices: leave-one-match-out</text>
+
+  <g stroke="#4a5a6a" stroke-width="1.4" marker-end="url(#a)">
+    <line x1="160" y1="71" x2="188" y2="71"/>
+    <line x1="340" y1="71" x2="368" y2="71"/>
+    <line x1="540" y1="71" x2="568" y2="71"/>
+    <line x1="690" y1="71" x2="718" y2="71"/>
+  </g>
+
+  <!-- inference row -->
+  <g stroke="#7d93a8" stroke-width="1.2">
+    <rect x="10" y="204" width="150" height="90" rx="6" fill="#fdf3e3"/>
+    <rect x="190" y="204" width="150" height="90" rx="6" fill="#fdf3e3"/>
+    <rect x="370" y="204" width="110" height="90" rx="6" fill="#fdf3e3"/>
+    <rect x="510" y="204" width="140" height="90" rx="6" fill="#fdf3e3"/>
+    <rect x="680" y="204" width="140" height="90" rx="6" fill="#fdf3e3"/>
+    <rect x="850" y="204" width="100" height="90" rx="6" fill="#e3f0e6"/>
+  </g>
+  <text x="85" y="226" text-anchor="middle" font-weight="700">Tracking</text>
+  <text x="85" y="244" text-anchor="middle">tactical (players, ball)</text>
+  <text x="85" y="260" text-anchor="middle">broadcast (ball) +</text>
+  <text x="85" y="276" text-anchor="middle">pitch homography</text>
+
+  <text x="265" y="226" text-anchor="middle" font-weight="700">Broadcast sync</text>
+  <text x="265" y="244" text-anchor="middle">lag from ball tracks</text>
+  <text x="265" y="260" text-anchor="middle">fills 8,049 ball frames</text>
+  <text x="265" y="276" text-anchor="middle">cut-away flag</text>
+
+  <text x="425" y="232" text-anchor="middle" font-weight="700">Features</text>
+  <text x="425" y="250" text-anchor="middle">+ models</text>
+  <text x="425" y="268" text-anchor="middle">0.6 LGB + 0.4 GRU</text>
+
+  <text x="580" y="226" text-anchor="middle" font-weight="700">Match evidence</text>
+  <text x="580" y="244" text-anchor="middle">gap length, cut-away</text>
+  <text x="580" y="260" text-anchor="middle">1 unsupervised EM</text>
+  <text x="580" y="276" text-anchor="middle">step, half weight</text>
+
+  <text x="750" y="226" text-anchor="middle" font-weight="700">Viterbi decoder</text>
+  <text x="750" y="244" text-anchor="middle">H / A / dead</text>
+  <text x="750" y="260" text-anchor="middle">switch cost lowered</text>
+  <text x="750" y="276" text-anchor="middle">at boundaries</text>
+
+  <text x="900" y="240" text-anchor="middle" font-weight="700">EM FC.csv</text>
+  <text x="900" y="258" text-anchor="middle">H / A / D / X</text>
+  <text x="900" y="274" text-anchor="middle">per frame</text>
+
+  <g stroke="#4a5a6a" stroke-width="1.4" marker-end="url(#a)">
+    <line x1="160" y1="249" x2="188" y2="249"/>
+    <line x1="340" y1="249" x2="368" y2="249"/>
+    <line x1="480" y1="249" x2="508" y2="249"/>
+    <line x1="650" y1="249" x2="678" y2="249"/>
+    <line x1="820" y1="249" x2="848" y2="249"/>
+    <path d="M835,150 L835,172 L425,172 L425,202" fill="none"/>
+    <path d="M120,204 L120,160 L360,160 L360,128 L455,128 L455,110" fill="none" stroke-dasharray="4,3"/>
+  </g>
+  <text x="640" y="167" font-size="11" fill="#4a5a6a">trained models</text>
+  <text x="128" y="155" font-size="11" fill="#4a5a6a">tracking statistics only (no labels, no video)</text>
+</svg>

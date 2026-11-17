@@ -1,0 +1,7 @@
+# Pinned environment that regenerates EM FC.csv byte-for-byte (tested: Python 3.11.9 Windows,
+# Python 3.12.3 Linux). The GRU runs in plain numpy, so PyTorch is not needed to make the file.
+# Linux: LightGBM needs OpenMP (sudo apt install libgomp1).
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.15.2
+lightgbm==4.4.0

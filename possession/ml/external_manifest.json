@@ -1,0 +1,102 @@
+{
+ "idsse": {
+  "source": "https://huggingface.co/datasets/pysport/idsse-data",
+  "revision": "a715a38dfbaf5f58e431727c2b78d174101a703c",
+  "licence": "CC-BY 4.0 (Bassek et al. 2025, Scientific Data)",
+  "files": {
+   "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml": {
+    "size": 11930,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml": {
+    "size": 11722,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml": {
+    "size": 11745,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml": {
+    "size": 11952,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml": {
+    "size": 11922,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml": {
+    "size": 11932,
+    "sha256": null
+   },
+   "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml": {
+    "size": 11823,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WMX.xml": {
+    "size": 776578,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WN1.xml": {
+    "size": 612114,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOH.xml": {
+    "size": 635747,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOY.xml": {
+    "size": 683018,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WPY.xml": {
+    "size": 698898,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WQQ.xml": {
+    "size": 732186,
+    "sha256": null
+   },
+   "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WR9.xml": {
+    "size": 681050,
+    "sha256": null
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml": {
+    "size": 418524833,
+    "sha256": "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml": {
+    "size": 391722803,
+    "sha256": "56ef948961a18e150dba0b7b16869d0008ff66f3050a0c355d31fa5b8ec2fcec"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml": {
+    "size": 348945715,
+    "sha256": "ec4dcf30200aad694dea263d5289485fcd0ca42badddaeb7c81f5cd5a4229d4f"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml": {
+    "size": 362567859,
+    "sha256": "a228ef0e676d009cefff1580fcb721b53f598454eb120ec347e0a628a3a4646b"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml": {
+    "size": 371688499,
+    "sha256": "845202c29ad93d696653436da426a7cdaefb848298e07b7343de6529581671e1"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml": {
+    "size": 356219423,
+    "sha256": "cbefcb0bd7f39f3b94ee69a7bc97aac0f936425062c1cc1b144733df36804d6f"
+   },
+   "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml": {
+    "size": 372934140,
+    "sha256": "70b63069189019066fb7e3d9db891122edfe787f3a43ba522ebe45ed89ea0269"
+   }
+  }
+ },
+ "metrica": {
+  "source": "https://github.com/metrica-sports/sample-data",
+  "commit": "e706dd506b360d69d9d123d5b8026e7294b13996"
+ },
+ "skillcorner": {
+  "source": "https://github.com/SkillCorner/opendata",
+  "licence": "MIT",
+  "use": "evaluation only, never training"
+ }
+}
