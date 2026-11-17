@@ -4,7 +4,7 @@ This repository labels every frame of FC Barcelona vs Athletic Club as `H`, `A`,
 It uses a frame model trained only on public tracking data from **other matches**, adapted to this
 match's tracking quality, and decoded into possession spells.
 
-- **Technical document:** [TECHNICAL.md](TECHNICAL.md)
+- **Technical document:** [EM_FC_technical_document.pdf](EM_FC_technical_document.pdf) (5 pages, as submitted); a longer version is in [TECHNICAL.md](TECHNICAL.md)
 - **Submitted file:** `EM FC.csv`, SHA-256 `9b029648d599dc6e310fdb2ba59c1f40ea6ac3631a5d84536a304ccaf1aba23d`
 
 ## Reproduce the submission
